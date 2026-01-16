@@ -1,0 +1,118 @@
+# 空岛方块商店配置文件
+# 版本: 1.0.0
+
+# GUI设置
+gui:
+  # GUI标题
+  title: "&6&l空岛方块商店"
+  # GUI行数 (1-6)
+  rows: 6
+  # 边框物品
+  border-item: "BLACK_STAINED_GLASS_PANE"
+  # 边框物品名称
+  border-name: "&8边框"
+  # 关闭按钮物品
+  close-item: "BARRIER"
+  # 关闭按钮名称
+  close-name: "&c关闭商店"
+  # 余额显示物品
+  balance-item: "GOLD_INGOT"
+  # 余额显示名称
+  balance-name: "&e我的余额: %balance%"
+  # 购买数量选择
+  quantity:
+    one:
+      item: "PAPER"
+      name: "&a购买1个"
+      lore:
+        - "&7点击选择购买1个"
+    sixteen:
+      item: "BOOK"
+      name: "&a购买16个"
+      lore:
+        - "&7点击选择购买16个"
+    sixtyfour:
+      item: "ENCHANTED_BOOK"
+      name: "&a购买64个"
+      lore:
+        - "&7点击选择购买64个"
+
+# 商店商品配置
+# 格式: 物品ID: 价格
+items:
+  # 基础方块
+  GRASS_BLOCK: 100
+  STONE: 50
+  OAK_LOG: 80
+  COBBLESTONE: 20
+  DIRT: 30
+  SAND: 40
+  GRAVEL: 35
+  
+  # 矿石类
+  COAL_ORE: 150
+  IRON_ORE: 300
+  GOLD_ORE: 500
+  DIAMOND_ORE: 1000
+  EMERALD_ORE: 800
+  REDSTONE_ORE: 200
+  LAPIS_ORE: 250
+  
+  # 建筑方块
+  OAK_PLANKS: 60
+  GLASS: 70
+  BRICKS: 120
+  STONE_BRICKS: 90
+  NETHERRACK: 110
+  SOUL_SAND: 130
+  GLOWSTONE: 180
+  
+  # 特殊方块
+  CLAY: 75
+  ICE: 95
+  PACKED_ICE: 140
+  BLUE_ICE: 200
+  OBSIDIAN: 250
+  END_STONE: 160
+  PURPUR_BLOCK: 220
+
+# 消息配置
+messages:
+  # 通用消息
+  prefix: "&8[&6空岛商店&8] &7"
+  no-permission: "&c你没有权限使用此命令！"
+  player-only: "&c只有玩家才能使用此命令！"
+  reload-success: "&a配置文件重载成功！"
+  reload-fail: "&c配置文件重载失败，请检查控制台错误信息！"
+  
+  # 商店消息
+  shop-opened: "&a已打开空岛方块商店！"
+  shop-closed: "&c已关闭商店界面。"
+  insufficient-funds: "&c余额不足！需要: %price%，当前余额: %balance%"
+  purchase-success: "&a成功购买 %amount% 个 %item%！花费: %price%"
+  purchase-fail: "&c购买失败，请检查背包空间！"
+  balance-check: "&e你的余额: %balance%"
+  
+  # 错误消息
+  vault-not-found: "&c未找到Vault经济系统！请确保已安装经济插件（如EssentialsX）。"
+  item-not-found: "&c商品不存在或配置错误！"
+  config-error: "&c配置文件错误，请检查控制台！"
+
+# 功能设置
+settings:
+  # 是否启用购买确认
+  confirm-purchase: true
+  # 购买确认消息
+  confirm-message: "&e确认购买 %amount% 个 %item% 吗？价格: %price%"
+  # 确认按钮物品
+  confirm-item: "LIME_STAINED_GLASS_PANE"
+  # 确认按钮名称
+  confirm-name: "&a确认购买"
+  # 取消按钮物品
+  cancel-item: "RED_STAINED_GLASS_PANE"
+  # 取消按钮名称
+  cancel-name: "&c取消购买"
+  # 是否记录购买日志
+  log-purchases: true
+  # 日志格式
+  log-format: "[%time%] %player% 购买了 %amount% 个 %item% 花费 %price%"

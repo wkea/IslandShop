@@ -1,0 +1,21 @@
+name: IslandShop
+version: '1.0.0'
+main: io.Sriptirc_wp_1.islandshop.Islandshop
+api-version: '1.16'
+authors: ['wp:1']
+description: '空岛专用GUI方块商店插件，支持Vault经济系统，提供便捷的方块购买功能'
+depend: ['Vault']
+commands:
+    islandshop:
+        description: '打开空岛方块商店'
+        aliases: ['shop']
+    is:
+        description: '打开空岛方块商店（快捷命令）'
+        aliases: ['shop']
+permissions:
+    islandshop.use:
+        description: '使用商店的权限'
+        default: true
+    islandshop.admin:
+        description: '管理商店配置的权限'
+        default: op
